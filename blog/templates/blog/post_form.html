@@ -1,0 +1,24 @@
+{% extends "blog/base.html"%}  
+
+{% comment %} Crispy forms are a way to implement bootstrap classes that help with modifying the registration page look from its default look given by USerCreationForm {% endcomment %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <div  class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            {% comment %} fieldset tag is used to group related form information together {% endcomment %}
+            <fieldset class='form-group'>
+                <legend class="border-bottom mb-4">
+                    Blog Post
+                </legend>
+
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class='btn btn-outline-info' type='submit'>Post</button>
+            </div> 
+        </form>  
+    </div>
+
+{% endblock content %}

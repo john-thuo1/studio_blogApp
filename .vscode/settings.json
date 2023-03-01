@@ -1,0 +1,7 @@
+{
+    "python.pythonPath" : "C:/Users/Hp/.virtualenvs/blogAPP-nJq7iEQ4/Scripts/Activate.ps1",
+    "emmet.includeLanguages": {
+        "django-html": "html",
+   }
+
+}
